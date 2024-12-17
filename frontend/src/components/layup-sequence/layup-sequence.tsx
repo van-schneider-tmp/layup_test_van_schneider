@@ -131,7 +131,7 @@ const LayupSequenceChart = () => {
                 cannot be worked by some of the more aggressive algorithm flavors.
             </p>
             <p>
-                I'm running the algorithm here in React and Javascript, so there existed runtime outliers due to other scheduled tasks in the
+                I'm running the algorithm here in React and Javascript, so there existed potential runtime outliers due to other scheduled tasks in the
                 event loop (maybe for component mounting / rendering engine and Javascripts garbage collection).
                 To remedy, I ran each N iteration 10 times and took the average runtime.
                 The plot is fairly linear showing O(n). If you tick up the number for N, it gets a little better.

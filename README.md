@@ -2,7 +2,7 @@
 Application to satisfy Layup parts skills test - Plane Simulation MVP and Layup Sequence - EOY 2024
 
 # Running the Application:
-From the root of the project, run `npm install:all`,
+From the root of the project, run `npm run install:all`,
 this will install all dependencies for the frontend and backend.
 This project only requires frontend packages.
 
