@@ -5,9 +5,21 @@
         "start:backend": "cd backend && node backend.js",
         "devel": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
         "dev:frontend": "cd frontend && npm start",
-        "dev:backend": "cd backend && npm run dev"
+        "dev:backend": "cd backend && npm run dev",
+        "lint": "eslint src --fix",
+        "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
+        "install:all": "npm-run-all --parallel install:frontend install:backend",
+        "install:frontend": "npm install --prefix frontend",
+        "install:backend": "npm install --prefix backend"
     },
     "dependencies": {
         "concurrently": "^8.2.0"
+    },
+    "devDependencies": {
+        "eslint": "^9.17.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-prettier": "^5.2.1",
+        "eslint-plugin-react": "^7.37.2",
+        "prettier": "^3.4.2"
     }
 }
